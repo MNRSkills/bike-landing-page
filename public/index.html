@@ -12,19 +12,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="main text-center">
+    <div class="main text-left container">
       <!-- main container -->
-      <section class="hero container bg-gray-800">
-        <h1 class="text-3xl font-bold underline text-white">Brand Name!</h1>
+      <section class="hero md:container bg-gray-800">
         <!-- start of image and product description -->
         <div class="container flex flex-col-reverse text-gray-300">
+          <h1 class="text-3xl font-bold underline text-white order-4">
+            Brand Name!
+          </h1>
           <img
             class="image order-2"
             src="./images/pexels-alexandre-perotto-165541.jpg"
             alt=""
           />
           <h3 class="font-bold order-3">What makes your product special!</h3>
-          <p class="order-1">
+          <p class="order-1 text-left p-4">
             Woke green juice mlkshk flannel tbh mustache, hammock biodiesel. Man
             braid offal enamel pin four dollar toast godard, sriracha quinoa.
             IPhone kale chips intelligentsia, bespoke skateboard man bun
@@ -34,18 +36,24 @@
         </div>
         <!-- button section -->
         <div class="flex flex-col gap-2">
-          <button class="bg-purple-700 p-6 text-white">Button Here</button>
-          <button class="bg-purple-300 p-6 text-purple-800 mb-4">
+          <button class="bg-purple-700 p-6 text-white w-1/2 ml-5">
+            Button Here
+          </button>
+          <button
+            class="bg-purple-300 p-6 bg-transparent border-purple-700 border-4 mb-4 w-1/2 ml-5"
+          >
             Button There
           </button>
         </div>
         <!-- end of hero section -->
       </section>
       <!-- Testimonials -->
-      <section class="flex flex-col gap-4 bg-gray-200">
-        <div><h1>Why do your customers love what you do?</h1></div>
+      <section class="container flex flex-col gap-4 bg-gray-200">
         <!-- start of card testimonial -->
-        <div class="leading-6">
+        <div class="leading-6 container">
+          <div class="px-10">
+            <h1>Why do your customers love what you do?</h1>
+          </div>
           <!-- ratings stars -->
           <ul class="flex items-center">
             <li>
@@ -63,13 +71,13 @@
             coloring book pour-over beard prism disrupt. Taxidermy marfa jean
             shorts cliche.
           </p>
-          <div class="p-6 leading-9">
-            <h3 class="font-bold text-gray-900">Customer Name</h3>
-            <h6 class="font-thin text-gray-400">City, State</h6>
-          </div>
+        </div>
+        <div class="p-6 leading-9">
+          <h3 class="font-bold text-gray-900">Customer Name</h3>
+          <h6 class="font-thin text-gray-400">City, State</h6>
         </div>
         <!-- start of card number 2 -->
-        <div class="leading-6">
+        <div class="leading-6 container">
           <!-- ratings for card number 2 -->
           <ul class="row-span-1 col-span-3 flex items-center">
             <li>
@@ -79,25 +87,27 @@
             <li><i class="fa-solid fa-star"></i></li>
             <li><i class="fa-solid fa-star-half"></i></li>
           </ul>
+          <!-- Quoted Testimonial -->
+          <p class="col-span-3 text-gray-400">
+            Chia pork belly narwhal YOLO brunch. PBR&B hexagon enamel pin shabby
+            chic, XOXO craft beer actually disrupt bushwick. Everyday carry cred
+            selvage keffiyeh pork belly leggings enamel pin flexitarian flannel
+            coloring book pour-over beard prism disrupt. Taxidermy marfa jean
+            shorts cliche.
+          </p>
         </div>
-        <!-- Quoted Testimonial -->
-        <p class="col-span-3 text-gray-400">
-          Chia pork belly narwhal YOLO brunch. PBR&B hexagon enamel pin shabby
-          chic, XOXO craft beer actually disrupt bushwick. Everyday carry cred
-          selvage keffiyeh pork belly leggings enamel pin flexitarian flannel
-          coloring book pour-over beard prism disrupt. Taxidermy marfa jean
-          shorts cliche.
-        </p>
         <div class="p-6 leading-9">
           <h3 class="font-bold text-gray-900">Customer Name</h3>
           <h6 class="font-thin text-gray-400">City, State</h6>
         </div>
       </section>
       <!-- describe the key features of your product -->
-      <section class="mx-4 p-4 w-full">
-        <div class="text-center leading-7">
-          <h1 class="font-bold text-2xl">Describe the key features of your product</h1>
-          <p>
+      <section class="container mx-4 p-4 w-full items-center">
+        <div class="container leading-7">
+          <h1 class="font-bold text-2xl">
+            Describe the key features of your product
+          </h1>
+          <p class="text-left">
             Woke green juice mlkshk flannel tbh mustache, hammock biodiesel. Man
             braid offal enamel pin four dollar toast godard, sriracha quinoa.
             IPhone kale chips intelligentsia, bespoke skateboard man bun
@@ -108,24 +118,58 @@
         <!-- list of icon and features -->
         <div class="grid grid-cols-2 gap-5 p-3 mx-3">
           <ul class="col-1 gap-3">
-            <li class="bg-gray-200 rounded-full"><i class="text-5xl fa-solid fa-bicycle"></i></li>
-            <li class="bg-gray-200 rounded-full"><i class="text-5xl fa-solid fa-wrench"></i></li>
-            <li class="bg-gray-200 rounded-full"><i class="text-5xl fa-solid fa-screwdriver-wrench"></i></li>
-            <li class="bg-gray-200 rounded-full"><i class="text-5xl fa-solid fa-gear"></i></li>
+            <li class="circle">
+              <i
+                class="text-5xl bg-gray-200 rounded-full fa-solid fa-bicycle"
+              ></i>
+            </li>
+            <li class="circle">
+              <i
+                class="bg-gray-200 rounded-full text-5xl fa-solid fa-wrench"
+              ></i>
+            </li>
+            <li class="circle">
+              <i
+                class="text-5xl bg-gray-200 rounded-full fa-solid fa-screwdriver-wrench"
+              ></i>
+            </li>
+            <li class="circle">
+              <i class="text-5xl bg-gray-200 rounded-full fa-solid fa-gear"></i>
+            </li>
           </ul>
           <ul class="col-2">
-            <li class="bg-gray-200 rounded-full"><i class="text-3xl fa-solid fa-pizza-slice"></i></li>
-            <li class="bg-gray-200 rounded-full"><i class="text-3xl fa-solid fa-earth-americas"></i></li>
-            <li class="bg-gray-200 rounded-full"><i class="text-3xl fa-brands fa-creative-commons-nd"></i></li>
-            <li class="bg-gray-200 rounded-full"><i class="text-5xl fa-solid fa-dice-d6"></i></li>
+            <li class="circle">
+              <i
+                class="text-3xl bg-gray-200 rounded-full fa-solid fa-pizza-slice"
+              ></i>
+            </li>
+            <li class="circle">
+              <i
+                class="text-3xl bg-gray-200 rounded-full fa-solid fa-earth-americas"
+              ></i>
+            </li>
+            <li class="circle">
+              <i
+                class="text-3xl bg-gray-200 rounded-full fa-brands fa-creative-commons-nd"
+              ></i>
+            </li>
+            <li class="circle">
+              <i
+                class="text-5xl bg-gray-200 rounded-full fa-solid fa-dice-d6"
+              ></i>
+            </li>
             <!-- <li><i class="fa-solid fa-circle-8"></i></li>
             <li><i class="fa-solid fa-circle-9"></i></li> -->
           </ul>
         </div>
         <!-- button class -->
         <div class="contianer flex flex-col gap-2">
-          <button class="bg-purple-700 p-4 text-white">Button Here</button>
-          <button class="bg-purple-300 p-4 text-purple-800 mb-4">
+          <button class="bg-purple-700 p-4 text-white md:w-full w-1/2">
+            Button Here
+          </button>
+          <button
+            class="bg-purple-300 p-4 text-purple-800 mb-4 md:w-full w-1/2"
+          >
             Button There
           </button>
         </div>
@@ -138,18 +182,18 @@
           alt=""
         />
         <h3 class="font-bold order-3">What makes your product special!</h3>
-        <p class="order-1">
+        <p class="order-1 text-left">
           Woke green juice mlkshk flannel tbh mustache, hammock biodiesel. Man
           braid offal enamel pin four dollar toast godard, sriracha quinoa.
           IPhone kale chips intelligentsia, bespoke skateboard man bun
-          gluten-free mixtape poutine sustainable pok pok. Taxidermy
-          distillery kombucha ugh helvetica artisan flannel heirloom.
+          gluten-free mixtape poutine sustainable pok pok. Taxidermy distillery
+          kombucha ugh helvetica artisan flannel heirloom.
         </p>
       </div>
       <!-- button section -->
-      <div class="flex flex-col gap-2">
-        <button class="bg-purple-700 p-6 text-white">Button Here</button>
-        <button class="bg-purple-300 p-6 text-purple-800 mb-4">
+      <div class="flex flex-col gap-2 p-10">
+        <button class="bg-purple-700 p-6 text-white md:w-full w-1/2">Button Here</button>
+        <button class="bg-purple-300 p-6 bg-transparent border-purple-700 border-4 mb-4 md:w-full w-1/2">
           Button There
         </button>
       </div>
