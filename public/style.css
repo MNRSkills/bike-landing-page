@@ -506,9 +506,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-row: span 1 / span 1;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mx-3 {
@@ -522,6 +527,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .flex {
@@ -554,6 +563,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .gap-2 {
@@ -661,6 +674,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.leading-10 {
+  line-height: 2.5rem;
+}
+
 .leading-9 {
   line-height: 2.25rem;
 }
@@ -714,8 +731,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     }
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:w-full {
     width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 }
 
