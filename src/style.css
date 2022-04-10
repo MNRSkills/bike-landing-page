@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.hero {
+  @apply md:container bg-gray-800 md:grid md:grid-cols-2;
+}

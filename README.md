@@ -12,3 +12,12 @@
 - Purple-button: #5151BB
 - Testimonial-background: #FBFBFB
 - Testimonial-text-color: #CBCBCB
+
+##WHAT I LEARNED 
+-Tailwind responsive layout
+- usng flex 
+
+
+##WHAT TO LEARN NEXT
+
+- 
