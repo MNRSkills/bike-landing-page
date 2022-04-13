@@ -5,3 +5,27 @@
 .hero {
   @apply md:container bg-gray-800 md:grid md:grid-cols-2;
 }
+
+.btn-container {
+  @apply container flex flex-col gap-2 md:col-start-2;
+}
+
+.btn-solid {
+  @apply bg-purple-700 p-6 mb-4 border-purple-700 border-4 text-black w-full md:w-1/2;
+}
+
+.btn-line {
+  @apply bg-purple-300 p-6 bg-transparent border-purple-700 border-4 mb-4 md:w-1/2 w-full;
+}
+
+.circle-container {
+  @apply container grid gap-5 md:grid-cols-1 justify-center md:p-3 mx-3;
+}
+
+.list-of-circles {
+  @apply gap-3 flex items-center justify-between;
+}
+
+.circle {
+  @apply mx-10 p-2;
+}

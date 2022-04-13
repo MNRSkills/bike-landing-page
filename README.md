@@ -17,7 +17,11 @@
 -Tailwind responsive layout
 - usng flex 
 
+--Practice keep it simple. It is a very difficult thing to do. 
+Overthinking grid layouts can be easy to when you containerize the main div. 
+I started to focus on each element instead of detailing the layout at once. One step at a time.
+
 
 ##WHAT TO LEARN NEXT
 
-- 
+- Action state, hover mode and onclick that will be more on other projects.
